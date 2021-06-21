@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+#getFullNameBtn {
+  min-width: 100px;
+  min-height: 50px;
+  padding: 15px;
+  margin: 2rem 0;
+  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+}
+#linkedinUrl {
+  margin: 0 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #600613;
+  transition: all 0.3s ease-in;
+}
+#linkedinUrl:hover {
+  text-decoration: underline;
+  color: #101ca7;
+}
+#githubUrl {
+  text-decoration: none;
+  margin: 0 2rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #600613;
+  transition: all 0.3s ease-out;
+}
+#githubUrl:hover {
+  text-decoration: underline;
+  color: #73a;
+}
+h1 {
+  margin: 2rem 0;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #d13537;
+}
+h2 {
+  margin: 2rem 0;
+  font-weight: 600;
+  letter-spacing: 4px;
+  font-size: 2rem;
+  color: #10053d;
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  a {
+    font-size: 0.8rem;
+
+    display: block;
+  }
+  #linkedinUrl {
+    margin-bottom: 1rem;
+  }
+}
