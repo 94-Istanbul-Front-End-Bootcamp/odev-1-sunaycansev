@@ -22,7 +22,8 @@ body {
   border: none;
   border-radius: 30px;
   font-size: 1.2rem;
-  transition: all 0.9s ease-in;
+  transition: all 0.3s ease-in;
+  color: #000;
 }
 #getFullNameBtn:hover {
   background-image: linear-gradient(
@@ -36,6 +37,19 @@ body {
   );
   cursor: pointer;
 }
+.button-grow {
+  color: #65b5f6;
+  background-color: transparent;
+  border: 1px solid #65b5f6;
+  border-radius: 4px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-grow:hover {
+  transform: scale(1.1);
+}
 #linkedinUrl {
   margin: 0 2rem;
   text-decoration: none;
@@ -45,7 +59,6 @@ body {
   transition: all 0.3s ease-in;
 }
 #linkedinUrl:hover {
-  text-decoration: underline;
   color: #101ca7;
 }
 #githubUrl {
@@ -57,8 +70,29 @@ body {
   transition: all 0.3s ease-out;
 }
 #githubUrl:hover {
-  text-decoration: underline;
   color: #73a;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 h1 {
   margin: 2rem 0;
